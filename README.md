@@ -11,17 +11,17 @@
 
 ## 1. 油猴脚本: `mikan_rss_helper.user.js`
 
-### ✨ 功能特性
+这是项目中的核心工具，一个为 [qb-rss-manager](https://github.com/Nriver/qb-rss-manager) 项目开发的配套油猴脚本。它能让你在蜜柑计划网站上方便地选择番剧，并生成与 `qb-rss-manager` 兼容的订阅规则 `.json` 文件。
 
-- **可视化操作**: 在蜜柑计划网站的番剧列表页面，为每个番剧卡片添加一个复选框，方便地选择或取消选择。
-- **浮动控制面板**: 一个可收缩的浮动面板，用于管理已选中的番剧和配置选项。
-- **自定义字幕组**: 支持为所有番剧设置默认的字幕组，也支持为单个番剧单独指定一个或多个字幕组。
-- **自动创建目录**: 能够根据番剧名称和季度信息（如 `S1`, `S2`）自动生成下载路径，保持文件结构清晰。
-- **状态持久化**: 脚本��记住你选择的番剧、路径设置和字幕组偏好，即使刷新页面或关闭浏览器也不会丢失。
-- **一键生成JSON**: 自动生成 `Mikan_Subscription_Rules.json` 文件，可被下述的辅助工具使用。
-- **清空与删除**: 方便地从列表中删除单个番剧，或一键清空所有已选中的项目。
+### 功能
 
-### 🚀 如何安装 (手动)
+- 在蜜柑计划网站的番剧列表页面，为每个番剧卡片添加一个复选框。
+- 提供一个浮动控制面板，用于管理已选作品和下载设置。
+- 支持为所有番剧设置默认字幕组，也支持为单个番剧单独指定字幕组。
+- 能够根据番剧名称和季度信息自动生成下载路径。
+- 一键生成 `Mikan_Subscription_Rules.json` 文件，该文件可被下述的辅助工具使用。
+
+### 如何安装 (手动)
 
 1.  **安装油猴 (Tampermonkey)**：如果你的浏览器还未安装，请先从官方渠道安装：[Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) | [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) | [Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)。
 2.  **打开脚本文件**：在本 GitHub 仓库中，点击打开 `mikan_rss_helper.user.js` 文件。
@@ -30,7 +30,7 @@
 5.  **粘贴代码**：将编辑器里预设的内容全部删除，然后按 `Ctrl+V` 将刚才复制的代码粘贴进去。
 6.  **保存脚本**：点击编辑器上方的“文件”菜单，然后选择“保存”。
 
-��装完成后，访问蜜柑计划网站即可看到效果。
+安装完成后，访问蜜柑计划网站即可看到效果。
 
 ---
 
@@ -38,18 +38,14 @@
 
 ### 用途
 
-本工具主要为了解决一个特定问题：一些用户（比如作者本人）在使用 [qb-rss-manager](https://github.com/Nriver/qb-rss-manager) 项目时，其“自动导入RSS订阅源到qBittorrent”的功能可能无法正常工作。如果你也遇到了这个问题，可以使用这个小工具来手动完成导入。
+本工具主要为了解决一个特定问题：一些用户（比如我）在使用 [qb-rss-manager](https://github.com/Nriver/qb-rss-manager) 项目时，无法导入RSS订阅源到qBittorrent。如果你也遇到了这个问题，可以使用这个小工具来手动完成导入。目前支持油猴脚本和qb-rss-manager的两种配置文件
 
 ### 如何使用
 
 1.  **运行环境**：确保你的电脑上安装了 Python。如果没有，可以从 [Python 官网](https://www.python.org/) 下载并安装。
 2.  **下载脚本**：下载本仓库中的 `import_rss_to_qb.py` 文件。
 3.  **运行脚本**：直接双击 `import_rss_to_qb.py` 文件，会弹出一个图形界面窗口。
-4.  **选择源文件**：在程序窗口中，点击第一个“浏览...”按钮，选择你刚刚用油猴脚本生成的 `Mikan_Subscription_Rules.json` 文件。
+4.  **选择源文件**：在程序窗口中，点击第一个“浏览...”按钮，选择你刚刚用油猴脚本生成的json文件或qb-rss-manager生成的json文件。
 5.  **确认目标文件**：程序会自动尝试定位你电脑上 qBittorrent 的 `feeds.json` 文件路径。通常你不需要修改它，除非你的 qBittorrent 安装在非常特殊的位置。
 6.  **执行导入**：**在操作前，请务必完全关闭 qBittorrent (包括系统托盘里的图标)**。然后点击“开始转换”按钮。
 7.  **完成**：程序会将新的 RSS 源添加进去。现在你可以重新启动 qBittorrent 查看结果了。
-
-## 🤝 贡献
-
-欢迎提交问题 (Issues) 或拉取请求 (Pull Requests) 来改进这个项目。
