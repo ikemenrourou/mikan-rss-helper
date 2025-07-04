@@ -1,0 +1,68 @@
+{
+    "version": "v1",
+    "data_group": {
+        "name": "默认分组",
+        "data": [
+            {
+                "release_date": "2025年01月",
+                "series_name": "药屋少女的呢喃 - ANI",
+                "mustContain": "",
+                "mustNotContain": "",
+                "rename_offset": "",
+                "savePath": "P:\\2025新番\\药屋少女的呢喃\\S2",
+                "affectedFeeds": "https://mikanani.me/RSS/Bangumi?bangumiId=3530&subgroupid=583",
+                "assignedCategory": ""
+            },
+            {
+                "release_date": "2025年01月",
+                "series_name": "药屋少女的呢喃 - 字幕组",
+                "mustContain": "",
+                "mustNotContain": "",
+                "rename_offset": "",
+                "savePath": "P:\\2025新番\\药屋少女的呢喃\\S2",
+                "affectedFeeds": "https://mikanani.me/RSS/Bangumi?bangumiId=3530&subgroupid=534",
+                "assignedCategory": ""
+            },
+            {
+                "release_date": "2025年04月",
+                "series_name": "夏日口袋",
+                "mustContain": "",
+                "mustNotContain": "",
+                "rename_offset": "",
+                "savePath": "P:\\2025新番\\夏日口袋\\S1",
+                "affectedFeeds": "https://mikanani.me/RSS/Bangumi?bangumiId=3599&subgroupid=583",
+                "assignedCategory": ""
+            },
+            {
+                "release_date": "2025年04月",
+                "series_name": "夏日口袋 - DMG",
+                "mustContain": "",
+                "mustNotContain": "",
+                "rename_offset": "",
+                "savePath": "P:\\2025新番\\夏日口袋\\S1",
+                "affectedFeeds": "https://mikanani.me/RSS/Bangumi?bangumiId=3599&subgroupid=1227",
+                "assignedCategory": ""
+            },
+            {
+                "release_date": "2025年04月",
+                "series_name": "夏日口袋 - 北宇治",
+                "mustContain": "",
+                "mustNotContain": "",
+                "rename_offset": "",
+                "savePath": "P:\\2025新番\\夏日口袋\\S1",
+                "affectedFeeds": "https://mikanani.me/RSS/Bangumi?bangumiId=3599&subgroupid=611",
+                "assignedCategory": ""
+            },
+            {
+                "release_date": "2025年10月",
+                "series_name": "",
+                "mustContain": "",
+                "mustNotContain": "",
+                "rename_offset": "",
+                "savePath": "",
+                "affectedFeeds": "",
+                "assignedCategory": ""
+            }
+        ]
+    }
+}
