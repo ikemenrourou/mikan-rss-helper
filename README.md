@@ -1,6 +1,6 @@
 # 蜜柑计划 RSS 订阅助手
 
-这是一个包含油猴脚本和辅助工具的项目，旨在帮助用户更方便地从[蜜柑计划](https://mikanime.tv/)网站订阅番剧，并解决 `qb-rss-manager` 可能遇到的 RSS 导入问题。
+本项目是 [qb-rss-manager](https://github.com/Nriver/qb-rss-manager) 的配套工具集，包含一个油猴脚本和一个Python辅助程序。它们协同工作，帮助用户在[蜜柑计划](https://mikanime.tv/)网站上轻松生成订阅规则，并解决将RSS源导入qBittorrent时可能遇到的问题。
 
 ## 文件说明
 
